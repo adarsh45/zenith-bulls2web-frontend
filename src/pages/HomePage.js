@@ -3,6 +3,7 @@ import { Container } from "reactstrap";
 import "../HomePage.css";
 
 import NavbarComponent from "../components/NavbarComponent";
+import PuzzleGame from "../components/PuzzleGame";
 
 const HomePage = () => {
 
@@ -25,6 +26,9 @@ const HomePage = () => {
                 he was immersed in darkness”</p>
                 <p>― Soroosh Shahrivar</p>
             </div>
+
+            
+            <PuzzleGame />
         </Container>
     );
 }
