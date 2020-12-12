@@ -36,7 +36,7 @@ nav ul li {
   font-size: 1.2em;
 }
 .nav-box i {
-  font-size: 1.2em;
+  font-size: 1.4em;
   color: goldenrod;
 }
 
@@ -51,6 +51,10 @@ nav :hover {
 nav:hover label {
   display: inline;
   vertical-align: middle;
+}
+
+nav:hover i {
+  display: none;
 }
 
 nav ul li :hover {

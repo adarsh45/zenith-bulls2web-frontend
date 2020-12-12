@@ -15,10 +15,10 @@ const NavbarComponent = ({ history }) => {
     <nav>
       <ul>
         <li>
-          <div class="nav-box">
+          <div className="nav-box">
             <a href="/">
               <center>
-                <i class="fa fa-home" aria-hidden="true"></i>
+                <i className="fa fa-home" aria-hidden="true"></i>
                 <label>
                   <Link
                     style={activeTab(history, "/")}
@@ -33,10 +33,10 @@ const NavbarComponent = ({ history }) => {
           </div>
         </li>
         <li>
-          <div class="nav-box">
+          <div className="nav-box">
             <a href="/">
               <center>
-                <i class="fa fa-university" aria-hidden="true"></i>
+                <i className="fa fa-university" aria-hidden="true"></i>
                 <label>
                   <Link
                     style={activeTab(history, "/inventory")}
@@ -51,10 +51,10 @@ const NavbarComponent = ({ history }) => {
           </div>
         </li>
         <li>
-          <div class="nav-box">
+          <div className="nav-box">
             <a href="/">
               <center>
-                <i class="fa fa-university" aria-hidden="true"></i>
+                <i className="fa fa-university" aria-hidden="true"></i>
                 <label>
                   <Link
                     style={activeTab(history, "/about")}
