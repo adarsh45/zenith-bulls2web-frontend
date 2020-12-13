@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container } from "reactstrap";
 import NavbarComponent from "../components/NavbarComponent";
-import "./About.css";
+import "../assets/css/About.css";
 
 const About = () => {
   const [facts, setfacts] = useState("");

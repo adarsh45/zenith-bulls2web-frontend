@@ -1,10 +1,10 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
-import "./Navbar.css";
+import "../assets/css/Navbar.css";
 
 const activeTab = (history, path) => {
   if (history.location.pathname === path) {
-    return { color: "teal" };
+    return { color: "goldenrod" };
   } else {
     return { color: "turquoise" };
   }
@@ -23,8 +23,7 @@ const NavbarComponent = ({ history }) => {
                   <Link
                     style={activeTab(history, "/")}
                     className="nav-link"
-                    to="/"
-                  >
+                    to="/">
                     Home
                   </Link>
                 </label>
@@ -32,11 +31,28 @@ const NavbarComponent = ({ history }) => {
             </a>
           </div>
         </li>
+        {/* <li>
+          <div className="nav-box">
+            <a href="#puzzle-game">
+              <center>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <label>
+                  <Link
+                    style={activeTab(history, "/")}
+                    className="nav-link"
+                    to="/">
+                    Game
+                  </Link>
+                </label>
+              </center>
+            </a>
+          </div>
+        </li> */}
         <li>
           <div className="nav-box">
             <a href="/">
               <center>
-                <i className="fa fa-university" aria-hidden="true"></i>
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 <label>
                   <Link
                     style={activeTab(history, "/inventory")}
@@ -54,7 +70,7 @@ const NavbarComponent = ({ history }) => {
           <div className="nav-box">
             <a href="/">
               <center>
-                <i className="fa fa-university" aria-hidden="true"></i>
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
                 <label>
                   <Link
                     style={activeTab(history, "/about")}

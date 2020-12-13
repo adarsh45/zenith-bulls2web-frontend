@@ -1,6 +1,6 @@
-import React, { useState} from "react";
+import React from "react";
 import GameBoard from "./GameBoard";
-import "../GameStyle.css";
+import "../assets/css/GameStyle.css";
 
 const PuzzleGame = () => {
   return (
