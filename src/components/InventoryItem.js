@@ -7,7 +7,7 @@ const InventoryItem = ( {item} )=> {
     backgroundColor: "#202020",
     border: "none",
     color: "white"
-}
+    }
 
     return (
         <Card className="mt-2 mb-1 inv_card" style={inv_styles}>
