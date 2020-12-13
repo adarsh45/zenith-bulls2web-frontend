@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import Inventory from "./pages/Inventory";
 import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./pages/About";
+import Alliance from "./pages/Alliance";
 
 const Routes = () => {
   return (
@@ -12,6 +13,7 @@ const Routes = () => {
         <Route path="/" exact component={HomePage} />
         <Route path="/about" exact component={About} />
         <Route path="/inventory" exact component={Inventory} />
+        <Route path="/alliance" exact component={Alliance} />
       </Switch>
     </BrowserRouter>
   );
