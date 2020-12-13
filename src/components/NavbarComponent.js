@@ -16,56 +16,66 @@ const NavbarComponent = ({ history }) => {
       <ul>
         <li>
           <div className="nav-box">
-            <a href="/">
-              <center>
-                <i className="fa fa-home" aria-hidden="true"></i>
-                <label>
-                  <Link
-                    style={activeTab(history, "/")}
-                    className="nav-link"
-                    to="/"
-                  >
-                    Home
-                  </Link>
-                </label>
-              </center>
-            </a>
+            <center>
+              <i className="fa fa-home" aria-hidden="true"></i>
+              <label>
+                <Link
+                  style={activeTab(history, "/")}
+                  className="nav-link"
+                  to="/"
+                >
+                  Home
+                </Link>
+              </label>
+            </center>
           </div>
         </li>
         <li>
           <div className="nav-box">
-            <a href="/">
-              <center>
-                <i className="fa fa-university" aria-hidden="true"></i>
-                <label>
-                  <Link
-                    style={activeTab(history, "/inventory")}
-                    className="nav-link"
-                    to="/inventory"
-                  >
-                    Inventory
-                  </Link>
-                </label>
-              </center>
-            </a>
+            <center>
+              <i className="fa fa-university" aria-hidden="true"></i>
+              <label>
+                <Link
+                  style={activeTab(history, "/inventory")}
+                  className="nav-link"
+                  to="/inventory"
+                >
+                  Inventory
+                </Link>
+              </label>
+            </center>
           </div>
         </li>
         <li>
           <div className="nav-box">
-            <a href="/">
-              <center>
-                <i className="fa fa-university" aria-hidden="true"></i>
-                <label>
-                  <Link
-                    style={activeTab(history, "/about")}
-                    className="nav-link"
-                    to="/about"
-                  >
-                    About
-                  </Link>
-                </label>
-              </center>
-            </a>
+            <center>
+              <i className="fa fa-university" aria-hidden="true"></i>
+              <label>
+                <Link
+                  style={activeTab(history, "/about")}
+                  className="nav-link"
+                  to="/about"
+                >
+                  About
+                </Link>
+              </label>
+            </center>
+          </div>
+        </li>
+        <li>
+          <div className="nav-box">
+            <center>
+              <i className="fa fa-university" aria-hidden="true"></i>
+              <label>
+                <Link
+                  style={activeTab(history, "/alliance")}
+                  className="nav-link"
+                  to="/alliance"
+                >
+                  Alliance
+                </Link>
+              </label>
+            </center>
           </div>
         </li>
       </ul>
