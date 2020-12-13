@@ -103,7 +103,7 @@ const Alliance = () => {
           <i class="fa fa-user" aria-hidden="true"></i>
         </button>
       </div>
-      <div style={{ paddingLeft: "70px", textAlign: "center" }}>
+      <div style={{ paddingLeft: "70px", textAlign: "center", color: "wheat" }}>
         {data.map((data, index) => {
           return (
             <>
