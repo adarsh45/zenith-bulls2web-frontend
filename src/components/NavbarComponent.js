@@ -6,7 +6,7 @@ const activeTab = (history, path) => {
   if (history.location.pathname === path) {
     return { color: "goldenrod" };
   } else {
-    return { color: "turquoise" };
+    return { color: "#202042" };
   }
 };
 

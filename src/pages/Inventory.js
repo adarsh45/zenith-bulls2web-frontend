@@ -7,6 +7,10 @@ import "../assets/css/Inventory.css"
 
 const Inventory = () => {
 
+  const pollStyle = {
+    color: "white"
+}
+
   const inventoryItems = [
     {itemId: 0, itemImage: "https://i.ebayimg.com/images/g/rvEAAOSwjgtf1Rgp/s-l1600.jpg", itemName: "Wine Maker", itemPrice: "1400.50"},
     {itemId: 1, itemImage: "https://i.ebayimg.com/images/g/B3EAAOSw2y1eclGp/s-l500.jpg", itemName: "Persische Kachel", itemPrice: "950.00"},
@@ -52,6 +56,7 @@ const Inventory = () => {
 
       <div>
         <Poll
+          style={pollStyle}
           question={pollQuestion}
           answers={pollAnswers}
           onVote={handleVote}
