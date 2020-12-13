@@ -28,42 +28,12 @@ const NavbarComponent = ({ history }) => {
                 </Link>
               </label>
             </center>
-            <a href="/">
-              <center>
-                <i className="fa fa-home" aria-hidden="true"></i>
-                <label>
-                  <Link
-                    style={activeTab(history, "/")}
-                    className="nav-link"
-                    to="/">
-                    Home
-                  </Link>
-                </label>
-              </center>
-            </a>
           </div>
         </li>
-        {/* <li>
-          <div className="nav-box">
-            <a href="#puzzle-game">
-              <center>
-                <i class="fa fa-gamepad" aria-hidden="true"></i>
-                <label>
-                  <Link
-                    style={activeTab(history, "/")}
-                    className="nav-link"
-                    to="/">
-                    Game
-                  </Link>
-                </label>
-              </center>
-            </a>
-          </div>
-        </li> */}
         <li>
           <div className="nav-box">
             <center>
-              <i className="fa fa-university" aria-hidden="true"></i>
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
               <label>
                 <Link
                   style={activeTab(history, "/inventory")}
@@ -74,26 +44,12 @@ const NavbarComponent = ({ history }) => {
                 </Link>
               </label>
             </center>
-            <a href="/">
-              <center>
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                <label>
-                  <Link
-                    style={activeTab(history, "/inventory")}
-                    className="nav-link"
-                    to="/inventory"
-                  >
-                    Inventory
-                  </Link>
-                </label>
-              </center>
-            </a>
           </div>
         </li>
         <li>
           <div className="nav-box">
             <center>
-              <i className="fa fa-university" aria-hidden="true"></i>
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
               <label>
                 <Link
                   style={activeTab(history, "/about")}
@@ -120,20 +76,6 @@ const NavbarComponent = ({ history }) => {
                 </Link>
               </label>
             </center>
-            <a href="/">
-              <center>
-                <i class="fa fa-info-circle" aria-hidden="true"></i>
-                <label>
-                  <Link
-                    style={activeTab(history, "/about")}
-                    className="nav-link"
-                    to="/about"
-                  >
-                    About
-                  </Link>
-                </label>
-              </center>
-            </a>
           </div>
         </li>
       </ul>
