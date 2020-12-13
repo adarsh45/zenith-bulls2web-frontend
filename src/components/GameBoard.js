@@ -2,11 +2,22 @@ import React, { useState } from "react";
 import Box from "./Box";
 import { TILE_COUNT, GRID_SIZE, BOARD_SIZE } from "../config/values"
 import { canSwap, shuffle, swap, isSolved } from "../config/gameFunctions"
+import { Button } from "reactstrap";
+
+import "../assets/css/GameStyle.css";
 
 function GameBoard() {
   const [tiles, setTiles] = useState([...Array(TILE_COUNT).keys()]);
   const [isStarted, setIsStarted] = useState(false);
-  console.log('is started:', isStarted)
+
+  const buttonStyles = {
+    border: "none",
+    fontSize: "1.2em",
+    background: "goldenrod",
+    padding: "0.6em",
+    margin: "auto",
+    display: "block"
+  }
 
   const shuffleTiles = () => {
     const shuffledTiles = shuffle(tiles)
@@ -43,6 +54,12 @@ function GameBoard() {
 
   return (
     <>
+    <h1 style={{
+      color: "goldenrod",
+      textAlign: "center",
+      fontFamily: 'Faustina, serif',
+      padding: "0.4em",
+    }}>Puzzle Game!!!</h1>
       <ul style={style} className="gameBoard">
         {tiles.map((tile, index) => (
           <Box
@@ -57,8 +74,8 @@ function GameBoard() {
       </ul>
       {hasWon && isStarted && <div>Puzzle solved 🧠 🎉</div>}
       {!isStarted ?
-        (<button onClick={() => handleStartClick()}>Start game</button>) :
-        (<button onClick={() => handleShuffleClick()}>Restart game</button>)}
+        (<Button style={buttonStyles} onClick={() => handleStartClick()}>Start game</Button>) :
+        (<Button style={buttonStyles} onClick={() => handleShuffleClick()}>Restart game</Button>)}
     </>
   );
 }

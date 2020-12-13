@@ -24,6 +24,7 @@ nav ul {
 }
 
 nav ul li {
+  margin: auto;
   width: 100%;
   padding: 1em 0;
 }
@@ -36,7 +37,9 @@ nav ul li {
   font-size: 1.2em;
 }
 .nav-box i {
-  font-size: 1.4em;
+  display: inline;
+  margin: auto;
+  font-size: 1.8em;
   color: goldenrod;
 }
 
@@ -51,6 +54,7 @@ nav :hover {
 nav:hover label {
   display: inline;
   vertical-align: middle;
+  margin: auto;
 }
 
 nav:hover i {

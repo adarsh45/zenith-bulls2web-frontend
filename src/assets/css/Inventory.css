@@ -1,0 +1,24 @@
+.inv_container{
+    width: 100%;
+}
+.inv_division{
+    text-align: center;
+}
+
+#inv_heading{
+    text-align: center;
+    color: goldenrod;
+    font-family: 'Faustina', serif;
+    padding: 0.2em 0;
+    font-size: 3.4em;
+}
+
+#inv_text{
+    color: white;
+    padding: 1em 0;
+}
+
+.inv_card{
+    background-color: #202020;
+    border: none;
+}

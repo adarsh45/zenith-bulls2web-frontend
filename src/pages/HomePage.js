@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "reactstrap";
-import "../HomePage.css";
+import "../assets/css/HomePage.css";
 
 import NavbarComponent from "../components/NavbarComponent";
 import PuzzleGame from "../components/PuzzleGame";
@@ -24,11 +24,11 @@ const HomePage = () => {
             <div id="quote-2">
                 <p>“Hope had only revealed herself to him when
                 he was immersed in darkness”</p>
-                <p>― Soroosh Shahrivar</p>
+                <p id="quote-author">― Soroosh Shahrivar</p>
             </div>
 
             
-            <PuzzleGame />
+            <PuzzleGame id="puzzle-game" />
         </Container>
     );
 }
